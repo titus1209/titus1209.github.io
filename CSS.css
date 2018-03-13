@@ -12,14 +12,15 @@ body{
 	margin: auto;
 	display:flex;
 	justify-content: center;
-	
-}
+	background-color: #000000}
 #taza{
 	width: auto;
 }
 .apartado1{
+	width: 100%;
 	justify-content: center;
 	display: flex;
+	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0MMKjQzljzJ5g-5bATTGH1j1muH6FKqFKZniDDa6eCVlSDEq5);
 	
 }
 .apartados{
@@ -41,18 +42,7 @@ img{
 	width: 450px;
 	padding: 5px;
 }
-.container .topnav{
-	display: flex;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-left: 10px;
-	padding-bottom: 10px;
-	justify-content: space-between;
-	width: 100%;
 	
-	
-	
-}
 .list-inline{
 	list-style:none;
 	display:flex;
@@ -93,6 +83,9 @@ img{
 }
 .topnav {
 	justify-content: space-around;
+	position: fixed;
+	background:rgba(192, 192, 192, 0.9);
+	height: 40px;
 }
 
 .bottonmenu {
@@ -166,21 +159,118 @@ footer {
 
 #boton{
 	width: 70px;
-	height: 70px;
-	margin-right: 10px;	
+	height: 70px;	
+	margin: 10px;
 }
 
 .twitter {
 	width: auto;
-	background: url(twitter.jpg)
+	background: url(twitter.jpg);
 	
 	
 }
 
 .linkedin {
-	background: url(linkedin.com)
+	background: url(linkedin.com);
 }
 
 .github {
-	background: url(github.com)
+	background: url(github.com);
 }
+
+.infoper{
+	width: 100%;
+	padding-top: 100px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.texto1{
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 200px;
+	width: 455px;
+}
+
+
+.lead{
+	display: flex;
+	justify-content: center;
+	width: 300px;
+	
+}
+
+.section-heading{
+	
+	width:200px;
+	height: 30px;
+	
+}
+
+.clearfix{
+	
+	width: auto;
+	height: 450px;
+	margin-left: 20%;
+	
+	
+}
+
+.fotocara{
+	background: url(cara.JPG) no-repeat;
+	background-size:cover;
+	width: 300px;
+    height:300px;
+    border-radius:150px;
+	margin-right: 20%;
+	border: 5px solid #A49393;
+}
+	
+#social2{
+	background: url(Sky.png);
+	background-size:auto;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	}
+
+.botonesSocial{
+	list-style: none;
+}
+
+.lista2{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+	
+	
+}
+
+.connect{
+	padding-top: 20px;
+	display: flex;
+	justify-content: flex-start;
+	width: 400px;
+}
+
+.facebook{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.nube{
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width:900px;
+}
+	
+
+
