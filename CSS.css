@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
+@import "url(https://fonts.googleapis.com/css?family=Oswald)";
+
 *{
 	margin:0;
 	padding:0;
@@ -12,15 +14,16 @@ body{
 	margin: auto;
 	display:flex;
 	justify-content: center;
-	background-color: #000000}
-#taza{
-	width: auto;
+	background-color: #000000;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
+
+
 .apartado1{
 	width: 100%;
 	justify-content: center;
 	display: flex;
-	background: url(MayaAdaptado.png) no-repeat;
+	background: url(MayaAdaptado.png) no-repeat ;
 	background-size:cover;
 	height: 900px;
 	font-weight: bold;
@@ -99,7 +102,7 @@ img{
 
 .topnav {
     font-size: 16px;
-    border-bottom: 1px outset rgba(192, 192, 192, 0.5);
+    border-bottom: 2px outset rgba(192, 192, 192, 0.5);
     background: rgba(192, 192, 192, 0.9);
     box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
 }
@@ -151,14 +154,22 @@ footer {
 
 .intro{
 	width: 100%;
-	
+	background: rgba(143, 185, 196,0.4);
 	display: flex;
 	justify-content: center;
 	border-bottom: 5px solid #A49393;
 	align-items: center;
-	
-	
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	height: 9%;
+}
 
+.pagina{
+	color:#C70037;
+	font-size: 35px;
+}
+.pagina2{
+	color:#1B9A98;
+	font-size: 20px;
 }
 
 .intro1{
@@ -182,25 +193,33 @@ footer {
 	
 }
 
-#boton{
+
+
+
+.twitter {
+	background: url(twitter.jpg);
+	border-radius: 100%;
 	width: 70px;
 	height: 70px;	
 	margin: 10px;
-}
-
-.twitter {
-	width: auto;
-	background: url(twitter.jpg);
 	
 	
 }
 
 .linkedin {
 	background: url(linkedin.com);
+	border-radius: 100%;
+	width: 70px;
+	height: 70px;	
+	margin: 10px;
 }
 
 .github {
 	background: url(github.com);
+	border-radius: 100%;
+	width: 70px;
+	height: 70px;	
+	margin: 10px;
 }
 
 .infoper{
@@ -253,8 +272,8 @@ footer {
 }
 	
 #social2{
-	background: url(Sky.png);
-	background-size:auto;
+	background: url(skie.png);
+	background-size:cover;
 	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
@@ -348,6 +367,8 @@ footer {
 
 #imgport4{
 	border: black 3px solid; 
+	
+	
 }
 
 #imgport5{
@@ -358,6 +379,50 @@ footer {
 #imgport6{
 	border: black 3px solid; 
 }
+
+
+#imgport:hover{
+	opacity: 0.5;
+    overflow: visible;
+    transition: all 0.4s ease-in-out;
+}
+
+
+#imgport2:hover{
+	opacity: 0.5;
+    overflow: visible;
+    transition: all 0.4s ease-in-out;
+}
+
+#imgport3:hover{
+	opacity: 0.5;
+    overflow: visible;
+    transition: all 0.4s ease-in-out;
+}
+
+
+#imgport4:hover{ 
+	
+	opacity: 0.5;
+    overflow: visible;
+    transition: all 0.4s ease-in-out;
+
+}
+
+#imgport5:hover{
+	opacity: 0.5;
+    overflow: visible;
+    transition: all 0.4s ease-in-out;
+}
+
+#imgport6:hover{
+	opacity: 0.5;
+    overflow: visible;
+    transition: all 0.4s ease-in-out;
+}
+
+
+
 
 
 
