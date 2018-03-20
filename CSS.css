@@ -30,14 +30,14 @@ body{
 }
 .apartados{
 	width: 90%;
+	height: 500px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-self: center;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	
-	
+		
 	
 }
 	
@@ -76,7 +76,7 @@ img{
     appearance: button;
 	text-decoration: none;
 	color: initial;
-	height: 20px;
+	height: 40px;
 }
 
 .navbar-right{
@@ -222,6 +222,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	width: 300px;
+	background: rgba(226, 226, 226, 0.4);
 	
 }
 
@@ -242,7 +243,7 @@ footer {
 }
 
 .fotocara{
-	background: url(cara.JPG) no-repeat;
+	background: url(cara.jpg) no-repeat;
 	background-size:cover;
 	width: 300px;
     height:300px;
@@ -299,31 +300,65 @@ footer {
 }
 
 .casco{
-	height: 235px;
-	width: 352px;
+	height: 250px;
+	width: 405px;
+	margin-right:10px;
 }
 .avion{
-	height: 235px;
-	width: 352px;
+	height: 250px;
+	width: 395px;
+	margin-right:10px;
 }
 
 .jim{
-	height: 235px;
-	width: 352px;
+	height: 250px;
+	width: 405px;
+	margin-right:10px;
 }
 
 .pollo{
-	height: 232px;
-	width: 377px;
+	height: 250px;
+	width: 405px;
+	margin-right:10px;
 }
 
 .unity{
-	height: 235px;
-	width: 352px;
+	height: 250px;
+	width: 405px;
+	margin-right:10px;
 }
 
 .captura{
-	height: 235px;
-	width: 352px;
+	height: 250px;
+	width: 405px;
+	margin-right:10px;
 }
+
+#imgport{
+	border: black 3px solid; 
+}
+
+#imgport2{
+	border: black 3px solid; 
+}
+
+#imgport3{
+	border: black 3px solid; 
+}
+
+#imgport4{
+	border: black 3px solid; 
+}
+
+#imgport5{
+	border: black 3px solid; 
+}
+
+
+#imgport6{
+	border: black 3px solid; 
+}
+
+
+
 
