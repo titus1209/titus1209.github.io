@@ -59,7 +59,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 col-sm-12"><img class="myself" data-bottom-top="transform: translateX(-200px);opacity: 0" data-center="transform: translateX(0px);opacity: 1" src="/Images/Careto.JPG" alt=""/></div>
+      <div class="col-md-6 col-sm-12"><img class="myself" data-bottom-top="transform: translateX(-200px);opacity: 0" data-center="transform: translateX(0px);opacity: 1" src="../NuevoPortfolio/Images/Careto.JPG" alt=""/></div>
       <div class="col-md-6 col-sm-12" data-bottom-top="transform: translateX(200px);opacity: 0" data-center="transform: translateX(0px);opacity: 1"> 
         <h2>Goals</h2>
         <div class="exp">Experience</div>
@@ -101,31 +101,35 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-6 work03" data-bottom-top="transform: translateX(-200px);opacity: 0" data-center="transform: translateX(0px);opacity: 1"> <main>
+      <div class="col-sm-6 work03 " data-bottom-top="transform: translateX(-200px);opacity: 0" data-center="transform: translateX(0px);opacity: 1"> 
+		  <main class="prueba">
 		<figure class="image_1">
-			<img src="/Images/Caja.PNG">
-			<figcaption></figcaption>
+			<img src="../NuevoPortfolio/Images/Caja.PNG" onclick="openModal(this);">
+			
 		</figure>
 		<figure class="image_2">
-			<img src="/Images/Arbol1.PNG">
-			<figcaption></figcaption>
+			<img src="../NuevoPortfolio/Images/Arbol1.PNG" onclick="openModal(this);">
+			
 		</figure>
 		<figure class="image_3" >
-			<img src="/Images/Crsital.PNG">
-			<figcaption></figcaption>
+			<img src="../NuevoPortfolio/Images/Crsital.PNG" onclick="openModal(this);">
+			
 		</figure>
 		<figure class="image_1">
-			<img src="/Images/Pereza.PNG">
-			<figcaption></figcaption>
-		</figure>
+			<img src="../NuevoPortfolio/Images/Pereza.PNG" onclick="openModal(this);">
+			
+		</figure
 		<figure class="image_1">
-			<img src="/Images/Seta.PNG">
-			<figcaption></figcaption>
+			<img src="../NuevoPortfolio/Images/Seta.PNG"onclick="openModal(this);">
+			
 		</figure>
-	</main> </div>
+	
+			  
+		</main> 
+	  </div>
       <div class="col-sm-6" data-bottom-top="transform: translateX(200px);opacity: 0" data-center="transform: translateX(0px);opacity: 1" src="http://i.imgur.com/znSrfyV.jpg" alt="">
         <h2 class="sb03">User Profile</h2>
-        <p> Alumno de la U-Tad, desarrollador de videojuegos．</p>
+        <p> I studing to be developer of videogames in U-Tad. Here are some examples of props which will be in the videogame I´m developing in teamwork.</p>
       </div>
     </div>
   </div>
@@ -135,15 +139,30 @@
 <footer class="jumbotron">
   <div class="container" id="section-conact">
     <h2>CONTACT ME</h2>
-	  <!--<input class="form-control" a href="vicmdf@hotmail.com">-->
-	  <!--<a href="mailto:vicmdf@hotmail.com">Do click to send me an email </a>-->
-	  <input type="button" value="Send email" onClick="parent.location='mailto:vicmdf@hotmail.com'">
+	  
+	 <input type="button" value="Send email" onClick="parent.location='mailto:vicmdf@hotmail.com'">
+	  
    <hr/>
-     <a href="/CV.pdf" download="cv.pdf">CV</a>
-    
+    <a href="CV.pdf" target="_blank" download="cv">CV</a>
+	  <!--onClick="CV.doc"-->
   </div>
 </footer>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+
+      <span class="close">&times;</span>
+	<center><img id="imgModal"  /> </center>  
+      
+    
+  </div>
+
+</div>
+	
+	
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
 
@@ -151,7 +170,36 @@
 
     <script  src="js/index.js"></script>
 
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
 
+// Get the button that opens the modal
+//var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+function openModal(imagen){
+	modal.style.display = "block";
+	//alert(imagen.src);
+	document.getElementById("imgModal").src = imagen.src;
+}
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 
 </body>
