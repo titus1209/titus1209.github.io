@@ -13,11 +13,13 @@ $(".btn1").mouseleave(function(){
 });
 //導覽列滑動
 $(document).on('click','a',function(event){
+ if($(this).attr("id") != "cv"){
   event.preventDefault();
   var target= $(this).attr("href");
   $('html,body').animate({
     scrollTop: $(target).offset().top
   },500);
+ }
   
 });
 
